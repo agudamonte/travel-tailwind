@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .card {
+    @apply w-56 h-64 shadow-lg rounded-lg overflow-hidden flex-none;
+  }
+  .card-description-green {
+    @apply p-3 bg-secondary text-white h-2/5 rounded-b-lg;
+  }
+  .card-description-blue{
+    @apply p-3 bg-white text-thirdColor h-2/5 rounded-b-lg;
+  }
+}

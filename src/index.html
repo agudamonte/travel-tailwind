@@ -4,10 +4,132 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
     <link rel="stylesheet" href="/dist/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <title>Travel page | Agudamonte</title>
   </head>
-  <body>
-    <div class="w-64 h-64 bg-red-200"></div>
+
+  <body class="font-Montserrat">
+    <nav></nav>
+    <div class="tab_bar"></div>
+    <section class="w-full h-screen">
+      <!--Section Home | Mobile first----------------------------------->
+      <div class="" id="home">
+        <div class="w-full h-3/4 relative">
+          <div
+            class="bg-white absolute top-4 right-4 py-1 px-4 rounded-full shadow-sm"
+          >
+            <img src="../dist/svg/moon.svg" alt="" />
+          </div>
+          <div class="w-full h-full">
+            <img
+              src="../dist/img/sanFrancisco.jpg"
+              alt="San Francisco Img"
+              class=""
+            />
+          </div>
+          <div
+            class="w-full h-full flex flex-col absolute top-20 space-y-60 items-center"
+          >
+            <input
+              type="search"
+              class="rounded-full w-11/12 h-12 border-none p-3 shadow-md text-center"
+              placeholder="San Francisco"
+            />
+            <button
+              class="bg-white text-primary text-sm font-bold py-3 px-10 rounded-full shadow-sm"
+            >
+              Explore more
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!--Section Recomendations | ----------------------------------->
+      <div class="p-6" id="recomendations">
+        <h2 class="font-bold text-2xl text-primary mb-5">Our Recomendations</h2>
+
+        <!-- Cards Container -->
+        <div
+          class="w-auto h-72 items-center flex overflow-x-auto overscroll-x-contain gap-6 scrollbar-hide"
+        >
+          <div id="card-1" class="card">
+            <div
+              class="w-50 h-3/5 rounded-t-lg bg-norway bg-cover bg-no-repeat"
+            ></div>
+            <div class="card-description-green">
+              <h4 class="text-lg font-bold mt-1">Norway</h4>
+              <p class="text-xs">Beautiful Landscapes</p>
+            </div>
+          </div>
+
+          <div id="card-2" class="card">
+            <div
+              class="w-full h-3/5 rounded-t-lg bg-newYork bg-cover bg-no-repeat"
+            ></div>
+            <div class="card-description-blue">
+              <h4 class="text-lg font-bold mt-1">New York</h4>
+              <p class="text-xs">Concrete Jungle</p>
+            </div>
+          </div>
+
+          <div id="card-3" class="card">
+            <div
+              class="w-full h-3/5 rounded-t-lg bg-yosemite bg-cover bg-no-repeat"
+            ></div>
+            <div class="card-description-green">
+              <h4 class="text-lg font-bold mt-1">Yosemite</h4>
+              <p class="text-xs">A break from the world</p>
+            </div>
+          </div>
+
+          <div id="card-4" class="card">
+            <div
+              class="w-full h-3/5 rounded-t-lg bg-seattle bg-cover bg-no-repeat"
+            ></div>
+            <div class="card-description-blue">
+              <h4 class="text-lg font-bold mt-1">Seattle</h4>
+              <p class="text-xs">
+                A bustling place that thrives with commercial, and cultural
+                activity
+              </p>
+            </div>
+          </div>
+
+          <div id="card-5" class="card">
+            <div
+              class="w-full h-3/5 rounded-t-lg bg-switzerland bg-cover bg-no-repeat"
+            ></div>
+            <div class="card-description-green">
+              <h4 class="text-lg font-bold mt-1">Switzerland</h4>
+              <p class="text-xs">A small mountainous country</p>
+            </div>
+          </div>
+
+          <div id="card-6" class="card">
+            <div
+              class="w-full h-3/5 rounded-t-lg bg-sydney bg-contain bg-repeat"
+            ></div>
+            <div class="card-description-blue">
+              <h4 class="text-lg font-bold mt-1">Sydney</h4>
+              <p class="text-xs">Vibrant city</p>
+            </div>
+          </div>
+        </div>
+        <!-- End cards container -->
+      </div>
+
+      <!--Section trending Stays | ----------------------------------->
+      <div class="" id="trending-stays"></div>
+
+      <!--Section FAQs|          ----------------------------------->
+      <div class="" id="FAQ"></div>
+    </section>
+    <footer></footer>
   </body>
 </html>
